@@ -1,6 +1,11 @@
 package com.dio.live.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Getter
 @Setter
@@ -8,7 +13,9 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class CategoriaUsuario {
+    @Id
     private long id;
     private String descricao;
 }
