@@ -14,6 +14,7 @@ import javax.persistence.OneToMany;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class CategoriaUsuario {
     @Id
     private long id;
